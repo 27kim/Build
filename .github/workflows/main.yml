@@ -64,4 +64,4 @@ jobs:
 #            
       - name: Archive app
         run: |
-          xcodebuild archive -workspace $XC_WORKSPACE -scheme $XC_SCHEME -configuration release -archivePath $XC_ARCHIVE          
+          xcodebuild archive -workspace $XC_WORKSPACE -scheme $XC_SCHEME -configuration release -archivePath $XC_ARCHIVE -allowProvisioningUpdates       
