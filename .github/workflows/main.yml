@@ -19,17 +19,17 @@ jobs:
     
     env:
       XC_VERSION: ${{ '11.4.1' }}
-      XC_WORKSPACE: ${{ 'ActionTest.xcworkspace' }}
-      XC_ARCHIVE: ${{ 'ActionTest.xcarchive' }}
-      XC_SCHEME: ${{ 'ActionTest' }}
+      XC_WORKSPACE: ${{ 'Build.xcworkspace' }}
+      XC_ARCHIVE: ${{ 'Build.xcarchive' }}
+      XC_SCHEME: ${{ 'Build' }}
       KEYCHAIN: ${{ 'temporary.keychain' }}
-      DECRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12' }}
-      ENCRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12.gpg' }}
-      DECRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/action.mobileprovision' }}
-      ENCRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/action.mobileprovision.gpg' }}
-      CERT_EXPORT_KEY: ${{ secrets.CERT_EXPORT_KEY }}
-      CERT_ENCRYPTION_KEY: ${{ secrets.CERT_ENCRYPTION_KEY }}
-      PROVISIONING_ENCRYPTION_KEY: ${{ secrets.PROVISIONING_ENCRYPTION_KEY }}    
+      #DECRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12' }}
+      #ENCRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/cert.p12.gpg' }}
+      #DECRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/action.mobileprovision' }}
+      #ENCRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/action.mobileprovision.gpg' }}
+      #CERT_EXPORT_KEY: ${{ secrets.CERT_EXPORT_KEY }}
+      #CERT_ENCRYPTION_KEY: ${{ secrets.CERT_ENCRYPTION_KEY }}
+      #PROVISIONING_ENCRYPTION_KEY: ${{ secrets.PROVISIONING_ENCRYPTION_KEY }}    
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
